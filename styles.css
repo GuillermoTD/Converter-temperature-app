@@ -1,0 +1,49 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background:#3C82EA;
+    width:100vw;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.Converter{
+    background:white;
+    width:25rem;
+    height:15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:1.8rem;
+    border-radius:0.4rem;
+}
+
+:where(input,select){
+    border:none;
+    outline:none;
+    padding: 0.3rem;
+    border:2px solid #0004;
+    border-radius:0.4rem;
+}
+
+
+@media(width<= 600px ) {
+    body{
+        background:red;
+    }
+}
+
+.Converter{
+    width:19.5rem;
+}
+
